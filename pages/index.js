@@ -32,13 +32,13 @@ export default function Home() {
         <h1 className={styles.title}>about me</h1>
         <p className={styles.info}>24 years / Palermo / Web Developer</p>
         <p className={styles.parAboutMe}>
-          Sono un perito informatico iscritto alla facoltà
+         {` Sono un perito informatico iscritto alla facoltà
           di ingegneria elettronica presso l'università
           di Palermo. Appassionato di tecnologia, ho
           intrapreso un percorso di sviluppo front-end
           frequentando un Coding Bootcamp che mi
           ha portato ad accrescere le mie capacità
-          di problem solving e lavoro in team.
+          di problem solving e lavoro in team.`}
         </p>
       </div>
     </DefaultLayout>
