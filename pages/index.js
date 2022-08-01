@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import DefaultLayout from '../components/DefaultLayout'
+import {DefaultLayout} from '../components/DefaultLayout'
 import { useEffect, useState } from 'react'
 
 

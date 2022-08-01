@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import DefaultLayout from '../../components/DefaultLayout'
+import {DefaultLayout} from '../../components/DefaultLayout'
 import Card from '../../components/Card'
 import Progress from '../../components/Progress'
 
