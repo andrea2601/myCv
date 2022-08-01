@@ -1,4 +1,4 @@
-import {SideBar} from "../Sidebar";
+// import {SideBar} from "../Sidebar";
 import SideBarOpen from "../SideBarOpen";
 import styles from "./styles.module.scss";
 import { useState } from "react";
