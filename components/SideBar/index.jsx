@@ -7,10 +7,10 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { BsPencil } from 'react-icons/bs';
 import { VscPieChart } from 'react-icons/vsc';
 import { BsShare } from 'react-icons/bs';
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from "next/link";
 
-export default function SideBar({ openSideBar }) {
+export const SideBar = ({ openSideBar }) => {
   const [isActive, setIsActive] = useState("about");
   const [urlCopied, setUrlCopied] = useState(false);
   const selectMenu = (section) => {
@@ -27,7 +27,7 @@ export default function SideBar({ openSideBar }) {
       <div className={styles.hamburger} onClick={() => { openSideBar(true) }}><GiHamburgerMenu /></div>
       <div className={styles.sectionContainer}>
         <Link href={`/`}>
-        <div className={`${styles.about} ${isActive == "about" ? styles.selected : null}`} onClick={() => selectMenu("about")}><MdOutlinePersonOutline /></div>
+          <div className={`${styles.about} ${isActive == "about" ? styles.selected : null}`} onClick={() => selectMenu("about")}><MdOutlinePersonOutline /></div>
         </Link>
         <Link href={`/contacts`}>
           <div className={`${styles.contact} ${isActive == "contact" ? styles.selected : null}`} onClick={() => selectMenu("contact")}><AiOutlinePhone /></div>
