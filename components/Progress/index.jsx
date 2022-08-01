@@ -20,7 +20,7 @@ export default function Progress(props) {
 
   useEffect(() => {
     animation()
-  }, []);
+  });
 
   return (
     <div className={styles.progress} onMouseEnter={()=>{animation()}}>
