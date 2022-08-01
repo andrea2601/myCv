@@ -7,7 +7,7 @@ export const DefaultLayout = ({ children }) => {
   return (
     <div className={styles.PageContainer}>
       <div className={styles.container}>
-        <SideBar openSideBar={setIsOpen} />
+        {/* <SideBar openSideBar={setIsOpen} /> */}
         <SideBarOpen isOpen={isOpen} setIsOpen={setIsOpen} />
 
 
