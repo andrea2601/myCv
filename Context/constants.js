@@ -1,0 +1,2 @@
+export const EDIT_SIDEBAR_ACTIVE = 'EDIT_SIDEBAR_ACTIVE'
+
