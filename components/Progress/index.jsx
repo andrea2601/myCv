@@ -1,10 +1,9 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 export default function Progress(props) {
 
-  const [value, setValue] = useState(124);
   const animation = () => {
     const circle = document.getElementById(props.name);
     circle.animate([
@@ -38,7 +37,7 @@ export default function Progress(props) {
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
           <defs>
           </defs>
-          <circle cx="80" cy="80" r="70" stroke-linecap="round" id={props.name} />
+          <circle cx="80" cy="80" r="70" strokeLinecap="round" id={props.name} />
         </svg>
       </div>
     </div>
