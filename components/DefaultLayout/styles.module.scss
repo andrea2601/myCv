@@ -1,0 +1,27 @@
+.PageContainer {
+  padding: 0 2rem;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .container {
+
+
+    position: relative;
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background: #1d1e20;
+    span>img {
+      border-radius: 10px;
+    }
+  }
+}

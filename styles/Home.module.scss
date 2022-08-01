@@ -1,0 +1,36 @@
+
+  .photo {
+    width: 45%;
+  }
+
+  .aboutMe {
+    width: 45%;
+    padding-right: 30px;
+
+    .title {
+      color: white;
+      font-size: 60px;
+    }
+
+    .info {
+      color: #b07cff;
+    }
+
+    .parAboutMe {
+      font-size: 16px;
+      color: gray;
+    }
+
+    .bottom {
+      .hr {
+        background: gray;
+        border: 0.10px solid gray;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .skills {
+        color: white;
+      }
+    }
+  }

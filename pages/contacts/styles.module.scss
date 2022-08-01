@@ -1,0 +1,31 @@
+.title{
+  color: white;
+  width: 30%;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  width: 60%;
+  .label{
+    color: #b07cff;
+  }
+  .phone {
+    width: 100%;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .linkedin {
+    width: 100%;
+  }
+
+  .github {
+    width: 100%;
+  }
+  a{margin-bottom: 50px;}
+}
