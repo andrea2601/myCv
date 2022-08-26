@@ -1,6 +1,7 @@
 .title{
   color: white;
-  width: 30%;
+  width: 100%;
+  text-align: center;
 }
 .contacts {
   display: flex;
@@ -9,6 +10,7 @@
   flex-wrap: wrap;
   color: white;
   width: 60%;
+  
   .label{
     color: #b07cff;
   }

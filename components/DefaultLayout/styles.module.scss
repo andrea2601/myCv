@@ -1,7 +1,10 @@
 .PageContainer {
   padding: 0 2rem;
   min-height: 100vh;
-  background: #000;
+  background-color: black;
+  background-image: url("../../public/pattern.png");
+  background-size: 150px 150px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +16,7 @@
     position: relative;
     height: 85vh;
     width: 85vw;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +24,36 @@
     flex-wrap: wrap;
 
     background: #1d1e20;
+
     span>img {
-      border-radius: 10px;
+      border-radius: 18px;
     }
+
+    .children {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  .container {
+    position: absolute !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    width: 100vw !important;
+    padding: 10px 0 10px 0 !important;
+
+
+  }
+
+  .children {
+    justify-content: center !important;
+    width: 100% !important;
   }
 }
