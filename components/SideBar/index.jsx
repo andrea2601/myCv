@@ -44,7 +44,7 @@ export const SideBar = ({ openSideBar }) => {
         <Link href={`/`}>
           <div className={`${styles.education} ${sidebarIsActive == "education" ? styles.selected : null}`} onClick={() => editSidebarActive("education")}><BsPencil /></div>
         </Link>
-        <Link href={`/`}>
+        <Link href={`/skills`}>
           <div className={`${styles.skills} ${sidebarIsActive == "skills" ? styles.selected : null}`} onClick={() => editSidebarActive("skills")}><VscPieChart /></div>
         </Link>
         <Link href={`/`}>

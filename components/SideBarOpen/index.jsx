@@ -47,7 +47,7 @@ export default function SideBarOpen(props) {
         <Link href={`/`}>
           <div className={`${styles.education} ${sidebarIsActive == "education" ? styles.selected : null}`} onClick={() => editSidebarActive("education")}>Educazione<BsPencil /></div>
         </Link>
-        <Link href={`/`}>
+        <Link href={`/skills`}>
           <div className={`${styles.skills} ${sidebarIsActive == "skills" ? styles.selected : null}`} onClick={() => editSidebarActive("skills")}>Skills<VscPieChart /></div>
         </Link>
         <Link href={`/`}>

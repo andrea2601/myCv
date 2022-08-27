@@ -42,18 +42,21 @@
 }
 
 @media (orientation: portrait) {
-  .container {
-    position: absolute !important;
-    min-height: 100vh !important;
-    height: auto !important;
-    width: 100vw !important;
+  .PageContainer{
+    align-items: flex-start;
+    .container {
+      position: absolute !important;
+      min-height: 100vh !important;
+      height: auto !important;
+      width: 100vw !important;
     padding: 10px 0 10px 0 !important;
 
-
+    
   }
-
+  
   .children {
     justify-content: center !important;
     width: 100% !important;
   }
+}
 }

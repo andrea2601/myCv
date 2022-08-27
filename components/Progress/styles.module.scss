@@ -1,10 +1,12 @@
 .progress {
-  width: 33%;
+  width: auto;
+  min-width: 20%;
   max-height: 100%;
   box-sizing: border-box;
   cursor: pointer;
   padding: 0 0px 30px 0;
   margin: 0 20px 0 0;
+  transform: scale(75%);
   .skill {
     width: 160px;
     height: 160px;
@@ -67,4 +69,28 @@
   font-weight: 300;
   margin: 0;
 }
+}
+
+@media (max-width: "950px") {
+  .progress{
+    min-width: auto;
+    width: 20%;
+    transform: scale(60%);
+  }
+}
+@media (max-width: "920px") {
+  .progress{
+    min-width: auto;
+    width: 50%;
+    transform: scale(70%);
+    margin: 0;
+  }
+}
+@media (max-width: "470px") {
+  .progress{
+    min-width: auto;
+    width: 50%;
+    transform: scale(70%);
+    margin: 0;
+  }
 }
