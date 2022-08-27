@@ -4,30 +4,50 @@
   text-align: center;
 }
 .contacts {
-  display: flex;
-  justify-content: center;
+  display: inline-grid;
+  justify-content:center;
   align-items: center;
   flex-wrap: wrap;
   color: white;
-  width: 60%;
+  width: 100%;
   
   .label{
     color: #b07cff;
   }
   .phone {
-    width: 100%;
+    width: auto;
   }
 
   .email {
-    width: 100%;
+    width: auto;
   }
 
   .linkedin {
-    width: 100%;
+    width: auto;
   }
 
   .github {
-    width: 100%;
+    width: auto;
   }
   a{margin-bottom: 50px;}
+}
+
+@media (max-width: "880px") {
+  .contacts {
+    width: 100%;
+    text-align: center;
+  }
+    .label{
+      width: 100%;
+      display: block;
+    }
+}
+@media (max-width: "300px") {
+  .title{
+    font-size: 28px;
+  }
+  .contacts {
+    font-size: 12px;
+  }
+    
 }
