@@ -13,13 +13,13 @@ export default function Skills() {
       <div className={styles.experiences}>
         {/* <Card/> */}
         <Progress name={"React"} value={236} path={"/react.svg"}/>
+        <Progress name={"NextJS"} value={270} path={"/next.png"}/>
         <Progress name={"Vue"} value={270} path={"/vue.svg"}/>
         <Progress name={"JavaScript"} value={236} path={"/Javascript.png"}/>
         <Progress name={"Git"} value={300} path={"/github.png"}/>
         <Progress name={"Photoshop"} value={100} path={"/Photoshop.png"}/>
         <Progress name={"Scss"} value={270} path={"/scss.svg"}/>
         <Progress name={"HTML"} value={270} path={"/html.png"}/>
-        <Progress name={"NextJS"} value={270} path={"/next.png"}/>
         {/* <div className={styles.experience}>
         </div> */}
       </div>
