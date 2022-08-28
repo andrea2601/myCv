@@ -1,19 +1,48 @@
-.title {
-  color: white;
-  width: 20%;
-}
-
-.experiences {
+.experienceContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: flex-start;
   flex-wrap: wrap;
-  color: white;
-  width: 60%;
+  width: 100%;
+  height: inherit;
+  overflow-y: hidden;
 
-  // .experience {
-  //   width: 100%;
- 
-  // }
+  .title {
+    color: white;
+    width: 100%;
+    height: calc(8% - 21.44px);
+    text-align: center;
+    box-sizing: content-box;
+  }
 
+  .experiences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    color: white;
+    width: auto;
+    height: 88%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+
+    .experience {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      box-sizing: border-box;
+    }
+
+  }
+}
+
+@media (orientation: portrait) {
+  .experienceContainer {
+    align-content: flex-start;
+    height: auto;
+    .experiences{
+      overflow: unset;
+    }
+  }
 }

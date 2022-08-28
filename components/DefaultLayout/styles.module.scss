@@ -17,6 +17,7 @@
     height: 85vh;
     width: 85vw;
     max-width: 1920px;
+    max-height: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +25,7 @@
     flex-wrap: wrap;
 
     background: #1d1e20;
-
+    
     span>img {
       border-radius: 18px;
     }
@@ -36,6 +37,7 @@
       align-items: center;
       align-content: center;
       flex-wrap: wrap;
+      height: inherit;
 
     }
   }
@@ -50,7 +52,7 @@
       height: auto !important;
       width: 100vw !important;
     padding: 10px 0 10px 0 !important;
-
+max-height: none;
     
   }
   
