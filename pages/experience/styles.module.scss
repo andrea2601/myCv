@@ -41,6 +41,7 @@
   .experienceContainer {
     align-content: flex-start;
     height: auto;
+    overflow-x: hidden;
     .experiences{
       overflow: unset;
     }
