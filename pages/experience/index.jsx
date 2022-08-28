@@ -11,7 +11,7 @@ export default function Experiences() {
 
         <h1 className={styles.title}>Esperienze</h1>
         <div className={styles.experiences}>
-          <a rel="noreferrer" href='https://andrealogiudice.vercel.app/' target="_blank"  className={styles.experience}>
+          <a rel="noreferrer" href='https://cb3-argo-two-git-dev-casiimir.vercel.app/' target="_blank"  className={styles.experience}>
             <Card foto={"/ferdast.png"} title={"Ferdast"} location={"(Edgemony)"} description={
               `Sito web di viaggi internazionali dedicato ad un target che va oltre i 55 anni di età,
         le possibili mete possono essere scelte tra: Stati Uniti d'America, Russia, Francia e Italia;
