@@ -1,3 +1,37 @@
+.handlerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.579);
+  background: transparent;
+  z-index: 9;
+  touch-action: none;
+
+  .handler {
+    width: 10px;
+    height: 100px;
+    background: #b07cff;
+    border-radius: 0 15px 15px 0;
+    position:fixed;
+    top: 50vh;
+    left: 0px;
+    // animation: shake 1s ease infinite;
+    animation-duration: 1s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+    z-index: 10;
+    writing-mode: vertical-lr;
+    text-align: end;
+    font-size: x-small;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 16px;
+  }
+}
+
 .sideBarOpen {
 
   .bgLayer {
@@ -7,10 +41,11 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.485);
-
     z-index: 7;
     cursor: pointer;
+    animation: bgColor 0.1s;
   }
+
 
   .sideBarOpenContainer {
     position: absolute;
@@ -25,6 +60,7 @@
     max-width: 100vw;
     text-align: center;
     background: #1d1e20;
+    // background: red;
 
     display: flex;
     flex-direction: column;
@@ -37,10 +73,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      align-self: flex-start;
       cursor: pointer;
       background: #b07cff;
       font-size: 20px;
       border-radius: 0 10px 0 0;
+      transition: all 0.5s ease;
     }
 
     .sectionContainer {
@@ -60,7 +98,7 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      transition: all 0.1s ease;
+      transition: all 0.5s ease;
 
       div {
         cursor: pointer;
@@ -97,6 +135,7 @@
 
 }
 
+// HIDE SIDEBAR
 .hideSideBar {
   .bgLayer {
     display: none;
@@ -104,14 +143,15 @@
 
   .sideBarOpenContainer {
     width: 0;
+    height: 100%;
 
     .hamburger {
       width: 0;
       font-size: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all 0.5s ease;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // transition: all 0.5s ease;
     }
 
     .sectionContainer {
@@ -162,5 +202,41 @@
 @media (orientation: portrait) {
   .sideBarOpenContainer {
     position: fixed !important;
+  }
+}
+
+@keyframes bgColor {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: rgba(0, 0, 0, 0.485);
+  }
+}
+
+@keyframes shake {
+  0% {
+    top: calc(50vh - 5px);
+  }
+
+  40% {
+    top: calc(50vh - 5px);
+  }
+
+  55% {
+    top: calc(50vh + 5px);
+  }
+
+  70% {
+    top: calc(50vh - 5px);
+  }
+
+  85% {
+    top: calc(50vh + 5px);
+  }
+
+  100% {
+    top: calc(50vh - 5px);
   }
 }
